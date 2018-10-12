@@ -81,7 +81,8 @@ img {
 }
 
 svg:not(:root) {
-    overflow: hidden
+    overflow: hidden;
+    background-color: #3a3a3a
 }
 
 figure {
@@ -446,7 +447,7 @@ a.text-light:hover {
     border-radius: 2px;
     display: inline-block;
     letter-spacing: .5px;
-    color: #444;
+    color: #a0a0a0;
     box-sizing: border-box;
     background: rgba(68,68,68,.1)
 }
@@ -740,14 +741,15 @@ ul.list-flat,ul.list-flat li {
     border: 0;
     border-bottom: 1px solid #e3e3e3;
     padding: 6px 0;
-    color: #4a4a4a;
+    background-color: #202020;
+    color: #ffffff;
     width: 100%
 }
 
 .su-input-group input:disabled {
-    background-color: #fff;
+    background-color: #202020;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 0h1L0 6V5zm1 5v1H5z' fill='%23ddd' fill-rule='evenodd'/%3E%3C/svg%3E");
-    color: #ccc;
+    color: #a0a0a0;
     cursor: not-allowed;
     box-sizing: border-box;
     padding: 6px;
@@ -756,7 +758,7 @@ ul.list-flat,ul.list-flat li {
 
 .su-input-group input:focus {
     outline: 0;
-    border-color: #ccc
+    border-color: #ffffff
 }
 
 .su-input-group.disabled .su-input-label {
@@ -2007,7 +2009,8 @@ button[data-balloon] {
 }
 
 body.outer-app-wrapper,html {
-    height: auto
+    height: auto;
+    background: #3a3a3a
 }
 
 #outer-app .outer-base.login {
@@ -2019,7 +2022,8 @@ body.outer-app-wrapper,html {
 }
 
 #outer-app #container {
-    background: #fff;
+    background: #2a2a2a;
+    color: #a0a0a0;
     margin: 60px auto 40px;
     padding: 40px;
     box-shadow: 0 0 40px #e3e3e3;
@@ -3351,6 +3355,7 @@ body.outer-app-wrapper,html {
 }
 
 .data-table .toolbar .search .search-input input {
+    background: #202020;
     width: 50px;
     border-bottom: none;
     transition: width .2s ease-in-out
@@ -3446,6 +3451,10 @@ body.outer-app-wrapper,html {
     content: "\E8F0"
 }
 
+.data-table table thead th.sortable.focused, .data-table table thead th.sortable:hover {
+    background: #202020;
+}
+
 .data-table table thead th.sortable.right:hover:after {
     content: ""
 }
@@ -3508,7 +3517,7 @@ body.outer-app-wrapper,html {
 }
 
 .data-table table thead th.pnl {
-    background: #fafafb;
+    background: #2a2a2a;
     min-width: 50px
 }
 
@@ -3517,7 +3526,11 @@ body.outer-app-wrapper,html {
 }
 
 .data-table table tbody tr.focused td,.data-table table tbody tr:hover td,.data-table table tfoot tr.focused td,.data-table table tfoot tr:hover td {
-    background: #fafafb
+    background: #202020
+}
+
+.data-table table tbody tr.focused td.pnl, .data-table table tbody tr:hover td.pnl, .data-table table tfoot tr.focused td.pnl, .data-table table tfoot tr:hover td.pnl {
+    background: #202020
 }
 
 .data-table table tbody tr.focused td,.data-table table tfoot tr.focused td {
@@ -3547,7 +3560,7 @@ body.outer-app-wrapper,html {
 }
 
 .data-table table tbody tr td.pnl,.data-table table tfoot tr td.pnl {
-    background: #fafafb
+    background: #202020
 }
 
 .data-table table tbody tr.search-term-absent,.data-table table tfoot tr.search-term-absent {
@@ -3589,7 +3602,8 @@ body.outer-app-wrapper,html {
     min-width: 175px;
     border-radius: 2px;
     position: fixed;
-    background: #fff;
+    background: #202020;
+    color: #a0a0a0;
     border: 1px solid #ddd;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.1)
 }
@@ -3599,7 +3613,7 @@ body.outer-app-wrapper,html {
     padding: 8px 10px;
     display: inline-block;
     box-sizing: border-box;
-    color: rgba(68,68,68,.6)
+    color: #a0a0a0
 }
 
 .context-menu .context-menu-list li a .icon {
@@ -3607,8 +3621,8 @@ body.outer-app-wrapper,html {
 }
 
 .context-menu .context-menu-list li a:hover {
-    color: #444;
-    background: #fafafb
+    color: #ff5722;
+    background: #202020
 }
 
 .context-menu .context-menu-list li a.branded {
@@ -3798,7 +3812,8 @@ body.outer-app-wrapper,html {
 }
 
 .order-window-cover .content {
-    padding: 15px 20px
+    padding: 15px 20px;
+    background: #2a2a2a;
 }
 
 .order-window-cover .content .advanced-options-toggle a {
@@ -3843,7 +3858,7 @@ body.outer-app-wrapper,html {
 }
 
 .order-window-cover .su-input-label,.order-window-cover .su-radio-label {
-    color: #444
+    color: #a0a0a0
 }
 
 .order-window-cover .advanced-options {
@@ -3969,7 +3984,8 @@ body.app-wrapper,html {
 
 body.app-wrapper {
     margin: 0;
-    overflow-y: scroll
+    overflow-y: scroll;
+    background: #2a2a2a;
 }
 
 .app.offline {
@@ -4006,7 +4022,9 @@ body.app-wrapper {
 .app .container .container-right {
     flex: 1 1;
     max-width: 966px;
-    box-shadow: 0 0 5px 0 rgba(0,0,0,.1)
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
+    background-color: #2a2a2a;
+    color: #aa77ff;
 }
 
 .app .header {
@@ -4016,7 +4034,8 @@ body.app-wrapper {
     z-index: 9;
     width: 100%;
     position: fixed;
-    background-color: #fff;
+    background-color: #3a3a3a;
+    color: #1188ff;
     box-shadow: 0 1px 8px 0 rgba(0,0,0,.1)
 }
 
@@ -4083,7 +4102,7 @@ body.app-wrapper {
     line-height: 30px;
     display: inline-block;
     text-decoration: none;
-    color: #4a4a4a;
+    color: #aa77ff;
     display: inline-flex;
     align-items: center;
     justify-content: center
@@ -4208,7 +4227,7 @@ body.app-wrapper {
     border-style: solid;
     border-width: 0 1px 1px;
     border-color: #eee;
-    background: #fff;
+    background: #2a2a2a;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.1)
 }
 
@@ -4225,7 +4244,7 @@ body.app-wrapper {
 }
 
 .app .header .right-nav .user-nav .dropdown-nav .dropdown-nav-header a.router-link-active,.app .header .right-nav .user-nav .dropdown-nav .dropdown-nav-header a:hover {
-    color: #444
+    color: #ff5722
 }
 
 .app .header .right-nav .user-nav .dropdown-nav .dropdown-nav-header h4 {
@@ -4233,7 +4252,7 @@ body.app-wrapper {
 }
 
 .app .header .right-nav .user-nav .dropdown-nav .dropdown-nav-header .email {
-    color: #9b9b9b
+    color: #1188ff
 }
 
 .app .header .right-nav .user-nav .dropdown-nav li a {
@@ -4241,12 +4260,17 @@ body.app-wrapper {
     vertical-align: middle;
     line-height: 35px;
     padding: 0 10px;
-    color: #4a4a4a;
+    color: #a0a0a0;
     width: 100%
 }
 
+.app .header .right-nav .user-nav .dropdown-nav li a:hover {
+    color: #ff5722;
+}
+
 .app .header .right-nav .user-nav .dropdown-nav li:hover {
-    background: #f4f4f4
+    background: #202020;
+    color: #ff5722
 }
 
 .app .page-content {
@@ -4265,8 +4289,8 @@ body.app-wrapper {
     padding: 0;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    color: #4a4a4a;
-    border-bottom: 1px solid #f1f1f1
+    color: #1188ff;
+    border-bottom: 1px solid #aa77ff
 }
 
 .app .page-title.big {
@@ -4646,7 +4670,7 @@ body.app-wrapper {
 
 .holdings .holdings-selector-wrap .holdings-selector {
     padding: 3px 30px 3px 8px;
-    background: #fff;
+    background: #202020;
     border-radius: 2px;
     border-color: #e3e3e3;
     -webkit-appearance: none;
@@ -4856,7 +4880,7 @@ body.app-wrapper {
     text-align: left;
     border: 1px solid #eee;
     border-radius: 2px;
-    background: #fff;
+    background: #202020;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
     min-width: 500px;
     max-height: 400px;
@@ -5371,7 +5395,8 @@ img {
 }
 
 svg:not(:root) {
-    overflow: hidden
+    overflow: hidden;
+    background-color: #3a3a3a
 }
 
 figure {
@@ -5736,7 +5761,7 @@ a.text-light:hover {
     border-radius: 2px;
     display: inline-block;
     letter-spacing: .5px;
-    color: #444;
+    color: #a0a0a0;
     box-sizing: border-box;
     background: rgba(68,68,68,.1)
 }
@@ -6030,14 +6055,15 @@ ul.list-flat,ul.list-flat li {
     border: 0;
     border-bottom: 1px solid #e3e3e3;
     padding: 6px 0;
-    color: #4a4a4a;
+    background-color: #202020;
+    color: #ffffff;
     width: 100%
 }
 
 .su-input-group input:disabled {
-    background-color: #fff;
+    background-color: #202020;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 0h1L0 6V5zm1 5v1H5z' fill='%23ddd' fill-rule='evenodd'/%3E%3C/svg%3E");
-    color: #ccc;
+    color: #a0a0a0;
     cursor: not-allowed;
     box-sizing: border-box;
     padding: 6px;
@@ -6046,7 +6072,7 @@ ul.list-flat,ul.list-flat li {
 
 .su-input-group input:focus {
     outline: 0;
-    border-color: #ccc
+    border-color: #ffffff
 }
 
 .su-input-group.disabled .su-input-label {
@@ -7525,6 +7551,10 @@ button[data-balloon] {
     content: "\E8F0"
 }
 
+.data-table table thead th.sortable.focused, .data-table table thead th.sortable:hover {
+    background: #202020;
+}
+
 .data-table table thead th.sortable.right:hover:after {
     content: ""
 }
@@ -7587,7 +7617,7 @@ button[data-balloon] {
 }
 
 .data-table table thead th.pnl {
-    background: #fafafb;
+    background: #2a2a2a;
     min-width: 50px
 }
 
@@ -7596,7 +7626,11 @@ button[data-balloon] {
 }
 
 .data-table table tbody tr.focused td,.data-table table tbody tr:hover td,.data-table table tfoot tr.focused td,.data-table table tfoot tr:hover td {
-    background: #fafafb
+    background: #202020
+}
+
+.data-table table tbody tr.focused td.pnl, .data-table table tbody tr:hover td.pnl, .data-table table tfoot tr.focused td.pnl, .data-table table tfoot tr:hover td.pnl {
+    background: #202020
 }
 
 .data-table table tbody tr.focused td,.data-table table tfoot tr.focused td {
@@ -7626,7 +7660,7 @@ button[data-balloon] {
 }
 
 .data-table table tbody tr td.pnl,.data-table table tfoot tr td.pnl {
-    background: #fafafb
+    background: #2a2a2a
 }
 
 .data-table table tbody tr.search-term-absent,.data-table table tfoot tr.search-term-absent {
@@ -7668,7 +7702,8 @@ button[data-balloon] {
     min-width: 175px;
     border-radius: 2px;
     position: fixed;
-    background: #fff;
+    background: #202020;
+    color: #a0a0a0;
     border: 1px solid #ddd;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.1)
 }
@@ -7678,7 +7713,7 @@ button[data-balloon] {
     padding: 8px 10px;
     display: inline-block;
     box-sizing: border-box;
-    color: rgba(68,68,68,.6)
+    color: #a0a0a0
 }
 
 .context-menu .context-menu-list li a .icon {
@@ -7686,8 +7721,8 @@ button[data-balloon] {
 }
 
 .context-menu .context-menu-list li a:hover {
-    color: #444;
-    background: #fafafb
+    color: #ff5722;
+    background: #202020
 }
 
 .context-menu .context-menu-list li a.branded {
@@ -7877,7 +7912,8 @@ button[data-balloon] {
 }
 
 .order-window-cover .content {
-    padding: 15px 20px
+    padding: 15px 20px;
+    background: #2a2a2a;
 }
 
 .order-window-cover .content .advanced-options-toggle a {
@@ -7922,7 +7958,7 @@ button[data-balloon] {
 }
 
 .order-window-cover .su-input-label,.order-window-cover .su-radio-label {
-    color: #444
+    color: #a0a0a0
 }
 
 .order-window-cover .advanced-options {
@@ -8302,7 +8338,7 @@ button[data-balloon] {
 .marketwatch-sidebar {
     font-size: .8125rem;
     box-sizing: border-box;
-    background-color: #fff
+    background-color: #202020
 }
 
 .marketwatch-sidebar .error-state {
@@ -8310,12 +8346,14 @@ button[data-balloon] {
 }
 
 .marketwatch-sidebar .context-menu .context-menu-list {
-    min-width: 150px
+    min-width: 150px;
+    background: #2a2a2a;
+    color: #a0a0a0
 }
 
 .marketwatch-sidebar .context-menu .pin {
     cursor: default;
-    color: #9b9b9b;
+    color: #a0a0a0;
     padding: 8px 10px
 }
 
@@ -8384,7 +8422,8 @@ button[data-balloon] {
 .marketwatch-sidebar .instruments .instrument {
     position: relative;
     transition: background-color .15s ease;
-    color: #4a4a4a;
+    background: #2a2a2a;
+    color: #1188ff;
     border-bottom: 1px solid #f1f1f1
 }
 
@@ -8439,6 +8478,7 @@ button[data-balloon] {
     top: 0;
     right: 0;
     height: 44px;
+    background: #202020;
     box-sizing: border-box;
     padding: 8px 15px 8px 2px
 }
@@ -8480,13 +8520,15 @@ button[data-balloon] {
 }
 
 .marketwatch-sidebar .instruments .instrument .symbol {
-    padding-right: 0
+    padding-right: 0;
+    background: #202020;
 }
 
 .marketwatch-sidebar .instruments .instrument .price {
     float: right;
     width: 45%;
-    padding-left: 0
+    padding-left: 0;
+    background: #202020;
 }
 
 .marketwatch-sidebar .instruments .instrument .price span {
@@ -8520,7 +8562,7 @@ button[data-balloon] {
     width: 400px;
     position: fixed;
     box-sizing: border-box;
-    background: #fff;
+    background: #3a3a3a;
     border-top: 1px solid #eee
 }
 
@@ -8540,7 +8582,7 @@ button[data-balloon] {
 }
 
 .marketwatch-sidebar .marketwatch-selector li.item.selected,.marketwatch-sidebar .marketwatch-selector li.item:hover {
-    background: #f4f4f4;
+    background: #2a2a2a;
     color: #ff5722
 }
 
@@ -8570,7 +8612,8 @@ button[data-balloon] {
     border-style: solid;
     border-width: 0 1px 1px;
     border-color: #eee;
-    background: #fff;
+    background: #2a2a2a;
+    color: #a0a0a0;
     box-shadow: 0 0 4px 0 rgba(0,0,0,.2)
 }
 
@@ -8665,7 +8708,8 @@ button[data-balloon] {
     margin: 0;
     border: none;
     text-indent: 40px;
-    color: #9b9b9b;
+    background: #202020;
+    color: #a0a0a0;
     height: 100%
 }
 
@@ -8684,7 +8728,8 @@ button[data-balloon] {
 }
 
 .omnisearch-wrap .omnisearch .search-result-list {
-    background: #fff;
+    background: #2a2a2a;
+    color: #1188ff;
     list-style: none;
     margin: 0;
     padding: 0
@@ -8695,7 +8740,7 @@ button[data-balloon] {
     padding: 6px 30px;
     margin-bottom: 0;
     cursor: pointer;
-    border-bottom: 1px solid #eee
+    border-bottom: 1px solid #a0a0a0
 }
 
 .omnisearch-wrap .omnisearch .search-result-list .search-result-item .exchange {
@@ -8714,13 +8759,14 @@ button[data-balloon] {
 }
 
 .omnisearch-wrap .omnisearch .search-result-list .search-result-item.selected,.omnisearch-wrap .omnisearch .search-result-list .search-result-item:hover {
-    background: #f4f4f4
+    background: #202020;
+    color: #ff5722
 }
 
 .omnisearch-wrap .omnisearch .search-result-list .search-result-item .action-buttons {
     position: absolute;
     right: 10px;
-    background: #f4f4f4
+    background: #202020
 }
 
 .omnisearch-wrap .omnisearch .search-result-list .search-result-item .action-buttons button {
@@ -8774,7 +8820,7 @@ button[data-balloon] {
 
 .market-depth-widget .market-depth table caption,.market-depth-widget .market-depth table thead tr th,.marketwatch-sidebar .market-depth table caption,.marketwatch-sidebar .market-depth table thead tr th {
     padding: 10px 0;
-    color: #9b9b9b;
+    color: #1188ff;
     text-transform: uppercase
 }
 
@@ -11196,7 +11242,8 @@ img {
 }
 
 svg:not(:root) {
-    overflow: hidden
+    overflow: hidden;
+    background-color: #3a3a3a
 }
 
 figure {
@@ -11561,7 +11608,7 @@ a.text-light:hover {
     border-radius: 2px;
     display: inline-block;
     letter-spacing: .5px;
-    color: #444;
+    color: #a0a0a0;
     box-sizing: border-box;
     background: rgba(68,68,68,.1)
 }
@@ -11855,14 +11902,15 @@ ul.list-flat,ul.list-flat li {
     border: 0;
     border-bottom: 1px solid #e3e3e3;
     padding: 6px 0;
-    color: #4a4a4a;
+    background-color: #202020;
+    color: #ffffff;
     width: 100%
 }
 
 .su-input-group input:disabled {
-    background-color: #fff;
+    background-color: #202020;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 0h1L0 6V5zm1 5v1H5z' fill='%23ddd' fill-rule='evenodd'/%3E%3C/svg%3E");
-    color: #ccc;
+    color: #a0a0a0;
     cursor: not-allowed;
     box-sizing: border-box;
     padding: 6px;
@@ -11871,7 +11919,7 @@ ul.list-flat,ul.list-flat li {
 
 .su-input-group input:focus {
     outline: 0;
-    border-color: #ccc
+    border-color: #ffffff
 }
 
 .su-input-group.disabled .su-input-label {
@@ -13350,6 +13398,10 @@ button[data-balloon] {
     content: "\E8F0"
 }
 
+.data-table table thead th.sortable.focused, .data-table table thead th.sortable:hover {
+    background: #202020;
+}
+
 .data-table table thead th.sortable.right:hover:after {
     content: ""
 }
@@ -13412,7 +13464,7 @@ button[data-balloon] {
 }
 
 .data-table table thead th.pnl {
-    background: #fafafb;
+    background: #2a2a2a;
     min-width: 50px
 }
 
@@ -13421,7 +13473,11 @@ button[data-balloon] {
 }
 
 .data-table table tbody tr.focused td,.data-table table tbody tr:hover td,.data-table table tfoot tr.focused td,.data-table table tfoot tr:hover td {
-    background: #fafafb
+    background: #202020
+}
+
+.data-table table tbody tr.focused td.pnl, .data-table table tbody tr:hover td.pnl, .data-table table tfoot tr.focused td.pnl, .data-table table tfoot tr:hover td.pnl {
+    background: #202020
 }
 
 .data-table table tbody tr.focused td,.data-table table tfoot tr.focused td {
@@ -13451,7 +13507,7 @@ button[data-balloon] {
 }
 
 .data-table table tbody tr td.pnl,.data-table table tfoot tr td.pnl {
-    background: #fafafb
+    background: #2a2a2a
 }
 
 .data-table table tbody tr.search-term-absent,.data-table table tfoot tr.search-term-absent {
@@ -13493,7 +13549,8 @@ button[data-balloon] {
     min-width: 175px;
     border-radius: 2px;
     position: fixed;
-    background: #fff;
+    background: #202020;
+    color: #a0a0a0;
     border: 1px solid #ddd;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.1)
 }
@@ -13503,7 +13560,7 @@ button[data-balloon] {
     padding: 8px 10px;
     display: inline-block;
     box-sizing: border-box;
-    color: rgba(68,68,68,.6)
+    color: #a0a0a0
 }
 
 .context-menu .context-menu-list li a .icon {
@@ -13511,8 +13568,8 @@ button[data-balloon] {
 }
 
 .context-menu .context-menu-list li a:hover {
-    color: #444;
-    background: #fafafb
+    color: #ff5722;
+    background: #202020
 }
 
 .context-menu .context-menu-list li a.branded {
@@ -13702,7 +13759,8 @@ button[data-balloon] {
 }
 
 .order-window-cover .content {
-    padding: 15px 20px
+    padding: 15px 20px;
+    background: #2a2a2a;
 }
 
 .order-window-cover .content .advanced-options-toggle a {
@@ -13747,7 +13805,7 @@ button[data-balloon] {
 }
 
 .order-window-cover .su-input-label,.order-window-cover .su-radio-label {
-    color: #444
+    color: #a0a0a0
 }
 
 .order-window-cover .advanced-options {
@@ -14127,7 +14185,7 @@ button[data-balloon] {
 .marketwatch-sidebar {
     font-size: .8125rem;
     box-sizing: border-box;
-    background-color: #fff
+    background-color: #202020
 }
 
 .marketwatch-sidebar .error-state {
@@ -14209,7 +14267,8 @@ button[data-balloon] {
 .marketwatch-sidebar .instruments .instrument {
     position: relative;
     transition: background-color .15s ease;
-    color: #4a4a4a;
+    background: #2a2a2a;
+    color: #1188ff;
     border-bottom: 1px solid #f1f1f1
 }
 
@@ -14264,6 +14323,7 @@ button[data-balloon] {
     top: 0;
     right: 0;
     height: 44px;
+    background: #202020;
     box-sizing: border-box;
     padding: 8px 15px 8px 2px
 }
@@ -14305,13 +14365,15 @@ button[data-balloon] {
 }
 
 .marketwatch-sidebar .instruments .instrument .symbol {
-    padding-right: 0
+    padding-right: 0;
+    background: #202020;
 }
 
 .marketwatch-sidebar .instruments .instrument .price {
     float: right;
     width: 45%;
-    padding-left: 0
+    padding-left: 0;
+    background: #202020;
 }
 
 .marketwatch-sidebar .instruments .instrument .price span {
@@ -14345,7 +14407,7 @@ button[data-balloon] {
     width: 400px;
     position: fixed;
     box-sizing: border-box;
-    background: #fff;
+    background: #3a3a3a;
     border-top: 1px solid #eee
 }
 
@@ -14365,7 +14427,7 @@ button[data-balloon] {
 }
 
 .marketwatch-sidebar .marketwatch-selector li.item.selected,.marketwatch-sidebar .marketwatch-selector li.item:hover {
-    background: #f4f4f4;
+    background: #2a2a2a;
     color: #ff5722
 }
 
@@ -14395,7 +14457,8 @@ button[data-balloon] {
     border-style: solid;
     border-width: 0 1px 1px;
     border-color: #eee;
-    background: #fff;
+    background: #2a2a2a;
+    color: #a0a0a0;
     box-shadow: 0 0 4px 0 rgba(0,0,0,.2)
 }
 
@@ -14490,7 +14553,8 @@ button[data-balloon] {
     margin: 0;
     border: none;
     text-indent: 40px;
-    color: #9b9b9b;
+    background: #202020;
+    color: #a0a0a0;
     height: 100%
 }
 
@@ -14509,7 +14573,8 @@ button[data-balloon] {
 }
 
 .omnisearch-wrap .omnisearch .search-result-list {
-    background: #fff;
+    background: #2a2a2a;
+    color: #1188ff;
     list-style: none;
     margin: 0;
     padding: 0
@@ -14520,7 +14585,7 @@ button[data-balloon] {
     padding: 6px 30px;
     margin-bottom: 0;
     cursor: pointer;
-    border-bottom: 1px solid #eee
+    border-bottom: 1px solid #a0a0a0
 }
 
 .omnisearch-wrap .omnisearch .search-result-list .search-result-item .exchange {
@@ -14539,13 +14604,13 @@ button[data-balloon] {
 }
 
 .omnisearch-wrap .omnisearch .search-result-list .search-result-item.selected,.omnisearch-wrap .omnisearch .search-result-list .search-result-item:hover {
-    background: #f4f4f4
+    background: #202020
 }
 
 .omnisearch-wrap .omnisearch .search-result-list .search-result-item .action-buttons {
     position: absolute;
     right: 10px;
-    background: #f4f4f4
+    background: #202020
 }
 
 .omnisearch-wrap .omnisearch .search-result-list .search-result-item .action-buttons button {
@@ -14599,7 +14664,7 @@ button[data-balloon] {
 
 .market-depth-widget .market-depth table caption,.market-depth-widget .market-depth table thead tr th,.marketwatch-sidebar .market-depth table caption,.marketwatch-sidebar .market-depth table thead tr th {
     padding: 10px 0;
-    color: #9b9b9b;
+    color: #1188ff;
     text-transform: uppercase
 }
 

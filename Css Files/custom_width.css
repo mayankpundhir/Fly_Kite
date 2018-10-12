@@ -182,7 +182,7 @@ td,th {
 
 .container {
     position: relative;
-    max-width: 1366px;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 0 20px
 }
@@ -3980,7 +3980,7 @@ body.app-wrapper {
     padding: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1366px
+    max-width: 1920px
 }
 
 .app .container {
@@ -4005,7 +4005,7 @@ body.app-wrapper {
 
 .app .container .container-right {
     flex: 1 1;
-    max-width: 966px;
+    max-width: 1520px;
     box-shadow: 0 0 5px 0 rgba(0,0,0,.1)
 }
 
@@ -5472,7 +5472,7 @@ td,th {
 
 .container {
     position: relative;
-    max-width: 1366px;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 0 20px
 }
@@ -11297,7 +11297,7 @@ td,th {
 
 .container {
     position: relative;
-    max-width: 1366px;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 0 20px
 }
